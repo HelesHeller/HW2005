@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic List Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Dynamic List Manager</h1>
+    <div class="controls">
+        <button id="addNewList">Добавить новый список</button>
+        <label>
+            <input type="radio" name="action" value="changeText"> Изменить текст элемента
+        </label>
+        <label>
+            <input type="radio" name="action" value="addToEnd"> Добавить элемент в конец списка
+        </label>
+        <label>
+            <input type="radio" name="action" value="insert"> Вставить элемент
+        </label>
+        <label>
+            <input type="radio" name="action" value="addNestedList"> Добавить вложенный список
+        </label>
+        <label>
+            <input type="radio" name="action" value="remove"> Удалить элемент
+        </label>
+        <label for="listTextInput"></label><input type="text" id="listTextInput" placeholder="Введите текст">
+    </div>
+    <div id="listContainer"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
